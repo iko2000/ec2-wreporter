@@ -144,7 +144,7 @@ function buildHtmlTemplate(opts: {
   return `
   <!doctype html>
   <html lang="en">
-    <body style="margin:0;padding:0;background:#0B1220;">
+    <body style="margin:0;padding:0;background:#FFFFFF;">
       <span style="display:none!important;visibility:hidden;opacity:0;color:transparent;height:0;width:0;overflow:hidden;">
         ${preheader}
       </span>
