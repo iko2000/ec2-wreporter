@@ -6,7 +6,7 @@ const PORT = 8000;
 app.use(express.json());
 
 app.get("/", (req: Request, res: Response) => {
-  res.json({ message: "Hello from Express + TypeScript 🚀" });
+  res.json({ message: "Hello from Express + TypeScript project 🚀" });
 });
 
 app.post("/echo", (req: Request, res: Response) => {
