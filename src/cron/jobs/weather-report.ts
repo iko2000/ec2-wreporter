@@ -247,7 +247,9 @@ async function sendEmailWithResend({
   to: string | string[]; subject: string; html: string; text: string;
 }) {
   const apiKey = process.env.RESEND_API_KEY!;
+  console.log(process.env.RESEND_API_KEY)
   if (!apiKey) throw new Error("Missing RESEND_API_KEY");
+
   const resend = new Resend(apiKey);
 
   console.log("Key was there..");
