@@ -40,12 +40,12 @@ function scheduleJob(
   console.log(`[${name}] Scheduled "${cronExpr}" (TZ=${TZ})`);
 }
 
-// scheduleJob("runweatherreport", "0 8,14 * * *", async () => {
-//   await runWeatherEmailReport();
-// });
-scheduleJob("runweatherreport", "* * * * *", async () => {
+scheduleJob("runweatherreport", "0 8,14 * * *", async () => {
   await runWeatherEmailReport();
 });
+// scheduleJob("runweatherreport", "* * * * *", async () => {
+//   await runWeatherEmailReport();
+// });
 
 
 function handleShutdown(signal: NodeJS.Signals) {
