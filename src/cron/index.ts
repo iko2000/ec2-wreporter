@@ -1,6 +1,6 @@
 //@ts-nocheck
 import cron from "node-cron";
-import runWeatherEmailReport from "./jobs/weather-report"
+import {runWeatherEmailReport} from "./jobs/weather-report"
 
 const TZ = process.env.TZ || "Europe/Malta";
 
