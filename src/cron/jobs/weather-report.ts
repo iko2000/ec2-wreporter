@@ -148,10 +148,10 @@ function buildHtmlTemplate(opts: {
       <span style="display:none!important;visibility:hidden;opacity:0;color:transparent;height:0;width:0;overflow:hidden;">
         ${preheader}
       </span>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0B1220;padding:24px 12px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#FFFFFF;padding:20px 12px;">
         <tr>
           <td align="center">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:620px;background:#0B1220;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:620px;background:#FFFFFF;">
               <tr>
                 <td style="padding:0 8px 16px 8px;">
                   <!-- Card -->
