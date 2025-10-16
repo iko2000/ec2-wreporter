@@ -7,8 +7,8 @@ dotenv.config();
 type NextHour = { time: Date; temperature_2m: number };
 
 export async function runWeatherEmailReport(
-  latitude = 52.52,
-  longitude = 13.41,
+  latitude = 35.923,
+  longitude = 14.488,
   to: string | string[] = process.env.MAIL_TO || ""
 ) {
   const params = {
