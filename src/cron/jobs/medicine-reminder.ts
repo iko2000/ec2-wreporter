@@ -9,9 +9,7 @@ export async function sendMedicineReminder() {
 
   // TODO: Fill in your reminder text below
   const text = `
-[FILL IN YOUR REMINDER TEXT HERE]
-
-This is your daily medicine reminder.
+This is your daily medicine reminder FROM YOUR LOVE , PLEASE ᲬᲐᲛᲐᲚᲘ ᲐᲠ ᲓᲐᲒᲐᲕᲘᲬᲧᲓᲔᲡ ᲜᲘᲜᲘ.
 `;
 
   const html = `
@@ -84,7 +82,7 @@ async function sendEmailWithResend({
 
   const resend = new Resend(apiKey);
 
-  const from = process.env.MAIL_FROM!;
+  const from = "DAILY REMINDER";
   if (!from)
     throw new Error(
       "Missing MAIL_FROM (must be a verified domain/sender in Resend)"
@@ -100,6 +98,7 @@ async function sendEmailWithResend({
     from,
     to: toList as any,
     subject,
+    cc: "shengelia1800@gmail.com",
     html,
     text,
   });
