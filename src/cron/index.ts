@@ -1,6 +1,7 @@
 //@ts-nocheck
 import cron from "node-cron";
 import {runWeatherEmailReport} from "./jobs/weather-report"
+import {sendMedicineReminder} from "./jobs/medicine-reminder"
 
 const TZ = process.env.TZ || "Europe/Malta";
 
@@ -46,6 +47,10 @@ scheduleJob("runweatherreport", "0 8,14 * * *", async () => {
 // scheduleJob("runweatherreport", "* * * * *", async () => {
 //   await runWeatherEmailReport();
 // });
+
+scheduleJob("medicinereminder", "0 12 * * *", async () => {
+  await sendMedicineReminder();
+}, { timezone: "Asia/Tbilisi" });
 
 
 function handleShutdown(signal: NodeJS.Signals) {
